@@ -1,0 +1,272 @@
+body {
+    max-width: 1000px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Billeder generelt */
+.grid_1-1 img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0 40px 0 40px;
+}
+
+h1 {
+    margin: 40px 40px 0 40px;
+}
+
+.lottiefile {
+    width: 100%;
+    height: auto;
+}
+
+/* Videos generelt */
+video {
+    width: 100%;
+    border-radius: 12px;
+    margin: 0 40px 0 40px;
+    gap: 2em;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/******* BILLEDER *******/
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 7;
+    gap: 2em;
+}
+
+.billede_1 {
+    display: grid;
+    grid-column: span 2;
+    grid-row: 1;
+    border-radius: 12px;
+}
+
+.billede_2 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.billede_3 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.billede_4 {
+    display: grid;
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+.billede_5 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.billede_6 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.billede_7 {
+    display: grid;
+    grid-column: span 2;
+    grid-row: 5;
+}
+
+.billede_8 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.billede_9 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.billede_10 {
+    display: grid;
+    grid-column: span 2;
+    grid-row: 7;
+}
+
+/******* VIDEOER *******/
+
+.video_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 3;
+    gap: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.video_1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+.video_2 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+.video_3 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+}
+
+.video_4 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+}
+
+.video_5 {
+    display: grid;
+    grid-column: span 2;
+    grid-row: 3;
+    width: 100%;
+    height: auto;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #eeeeee;
+    justify-content: space-between;
+  }
+
+  .footer-tekst {
+    display: grid;
+    grid-column: 2;
+  }
+
+  .footer2 {
+    background-color: #ff9861;
+    color: #fff;
+  }
+
+
+@media (width >= 768px) {
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .billeder {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .billede_1 {
+        display: grid;
+        grid-column: 1;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_2 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_3 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_4 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_5 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_6 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_7 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_8 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_9 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .billede_10 {
+        position: relative;
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+}
