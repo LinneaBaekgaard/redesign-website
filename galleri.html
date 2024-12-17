@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/galleri.css" />
+    <title>Galleri</title>
+  </head>
+  <body>
+    <header>
+      <!--  MENUEN  -->
+      <div class="header">
+        <!--  LOTTIEFILE  -->
+        <a href="index.html">
+          <script class="lottiefile" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+          <dotlottie-player src="https://lottie.host/4d05b2e0-6d8d-4b51-866d-6875a558ec92/XKM8eC7pPu.lottie" background="transparent" speed="1" style="width: 300px; height: 150px" loop="false" autoplay> </dotlottie-player>
+        </a>
+
+        <!--  SØGE-BAR  -->
+        <div class="menu">
+          <div class="search">
+            <input type="text" placeholder="Søg" aria-label="Søg" />
+          </div>
+          <!--  BURGER-MENU  -->
+          <input type="checkbox" id="burger-toggle" />
+          <label for="burger-toggle" class="burger-menu">&#9776;</label>
+          <nav>
+            <ul class="dropdown">
+              <li><a href="index.html">Forside</a></li>
+              <li><a href="omdfu.html">Om DFU</a></li>
+              <li><a href="dicipliner.html">Dicipliner</a></li>
+              <li><a href="test.html">Galleri</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1>Galleri / Video</h1>
+      <section class="grid_1-1">
+        <div class="image_overlay billede_1">
+          <img src="img/billede_1.webp" alt="Blandede bolcher" />
+          <div class="text_overlay">
+            <p>BLANDEDE "BOLCHER" FALDSKÆRME</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_2">
+          <img src="img/billede_2.webp" alt="Wingsuit" />
+          <div class="text_overlay">
+            <p>WINGSUITS</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_3">
+          <img src="img/billede_3.webp" alt="Formationsspring" />
+          <div class="text_overlay">
+            <p>FORMATIONSSPRING</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_4">
+          <img src="img/billede_4.webp" alt="Freefly" />
+          <div class="text_overlay">
+            <p>FREEFLY</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_5">
+          <img src="img/billede_5.webp" alt="Præcision" />
+          <div class="text_overlay">
+            <p>PRÆCISION</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_6">
+          <img src="img/billede_6.webp" alt="Konkurrence" />
+          <div class="text_overlay">
+            <p>KONKURRENCE</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_7">
+          <img src="img/billede_7.webp" alt="Tandem" />
+          <div class="text_overlay">
+            <p>TANDEMSPRING</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_8">
+          <img src="img/billede_8.webp" alt="Elevspring" />
+          <div class="text_overlay">
+            <p>ELEVSPRING</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_9">
+          <img src="img/billede_9.webp" alt="Jubilæum" />
+          <div class="text_overlay">
+            <p>JUBILÆUM</p>
+          </div>
+        </div>
+
+        <div class="image_overlay billede_10">
+          <img src="img/billede_10.webp" alt="Canopy piloting" />
+          <div class="text_overlay">
+            <p>CANOPY PILOTING</p>
+          </div>
+        </div>
+      </section>
+
+      <br />
+      <h2>VIDEOER</h2>
+
+      <section class="Videoer_grid">
+        <div class="video_1">
+          <video autoplay loop controls>
+            <source src="http://linba.dk/05_indhold/website/video_1.mp4" type="video/mp4" />
+            Video 1
+          </video>
+        </div>
+
+        <div class="video_2">
+          <video autoplay loop muted controls src="http://linba.dk/05_indhold/website/video_2.mp4">Video 2</video>
+        </div>
+
+        <div class="video_3">
+          <video autoplay loop controls src="http://linba.dk/05_indhold/website/video_3.mp4">Video 3</video>
+        </div>
+
+        <div class="video_4">
+          <video autoplay loop controls src="http://linba.dk/05_indhold/website/video_4.mp4">Video 4</video>
+        </div>
+
+        <div class="video_5">
+          <video autoplay loop controls src="http://linba.dk/05_indhold/website/faldskaerm.mp4">Video 5</video>
+        </div>
+      </section>
+
+      <br />
+
+      <a class="tilbagetiltop" href="test.html"> <img class="pil" src="img/pil.webp" alt="pil" /></a>
+    </main>
+
+    <footer>
+      <section class="footer1">
+        <div class="input">
+          <h2>Følg med i DFU!</h2>
+          <form>
+            <div class="form-felt">
+              <label for="email">E-mail</label>
+              <input placeholder="email address*" name="email" type="email" />
+            </div>
+
+            <div class="form-felt">
+              <label for="name">Navn</label>
+              <input placeholder="navn*" name="fname" type="text" />
+            </div>
+
+            <button type="submit">Tilmeld</button>
+          </form>
+        </div>
+        <div class="genveje">
+          <h2>Genveje</h2>
+          <p>Kontakt DFU</p>
+          <p>Nyheder</p>
+          <p>DFU kalenderen</p>
+          <p>Links til "Springeren"</p>
+        </div>
+      </section>
+      <section class="footer2">
+        <div>
+          <p>© 2024 by Dansk Faldskærms Union</p>
+          <p>Idrættens Hus, Brøndby Stadion 20, DK-2605 Brøndby</p>
+          <p>Telefon: +45 23 44 20 19 Email: dfu@dfu.dk</p>
+        </div>
+        <div class="logo">
+          <img class="logo" src="img/dif.webp" alt="DIF logo" />
+          <img class="logo" src="img/fai.webp" alt="FAI logo" />
+          <img class="logo" src="img/dka.webp" alt="DKA logo" />
+        </div>
+        <div class="some">
+          <h2>Følg os på SoMe</h2>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
