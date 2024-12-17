@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Discipliner</title>
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <header>
+      <!--  MENUEN  -->
+      <div class="header">
+        <!--  LOTTIEFILE  -->
+        <a href="index.html">
+          <script
+            class="lottiefile"
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+          <dotlottie-player
+            src="https://lottie.host/4d05b2e0-6d8d-4b51-866d-6875a558ec92/XKM8eC7pPu.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 150px"
+            loop="false"
+            autoplay
+          ></dotlottie-player>
+        </a>
+
+        <!--  SØGE-BAR  -->
+        <div class="menu">
+          <div class="search">
+            <input type="text" placeholder="Søg" aria-label="Søg" />
+          </div>
+          <!--  BURGER-MENU  -->
+          <input type="checkbox" id="burger-toggle" />
+          <label for="burger-toggle" class="burger-menu">&#9776;</label>
+          <nav>
+            <ul class="dropdown">
+              <li><a href="index.html">Forside</a></li>
+              <li><a href="omdfu.html">Om DFU</a></li>
+              <li><a href="dicipliner.html">Dicipliner</a></li>
+              <li><a href="test.html">Galleri</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Discipliner</h1>
+      <p>
+        Præcisionspring, formationsspring, freefly/freestyle, wingsuit, canopy
+        piloting. Sporten breder sig over mange discipliner. Der er en til lige
+        netop din personlighed, tid, lyst og mulighed. Nogle af disciplinerne
+        skal man have faldskærmscertifikat for at starte på, andre kan man
+        begynde på under uddannelsen til faldskærmsspringer. <br />
+        <br />DFU deltager med landshold i alle disciplinerne ved internationale
+        konkurrencer hvert år. Der er også masser af nationale konkurrencer små
+        som større, som er åbne for alle at deltage i (hvis man har godkendelse
+        til den enkelte disciplin). Resultaterne for konkurrencer findes under
+        SU menupunktet. <br />I de enkelte disciplin menupunkter, kan du finde
+        yderligere information om lige netop den disciplin, som du er nysgerrig
+        på.
+      </p>
+      <div class="galleri">
+        <div class="image_text_overlay">
+          <img src="img/formation.webp" alt="Formationsspring" />
+          <div class="text_overlay">
+            <p>FORMATIONSSPRING</p>
+          </div>
+        </div>
+        <div class="image_text_overlay">
+          <img src="img/freefly.webp" alt="Freefly/freestyle" />
+          <div class="text_overlay">
+            <p>FREEFLY/FREESTYLE</p>
+          </div>
+        </div>
+        <div class="image_text_overlay">
+          <img src="img/wingsuit.webp" alt="Wingsuit" />
+          <div class="text_overlay">
+            <p>WINGSUIT</p>
+          </div>
+        </div>
+        <div class="image_text_overlay">
+          <img src="img/canopy.webp" alt="Canopy Piloting" />
+          <div class="text_overlay">
+            <p>CANOPY PILOTING</p>
+          </div>
+        </div>
+        <div class="image_text_overlay praecision">
+          <img src="img/praecision.webp" alt="Præcisionspring" />
+          <div class="text_overlay">
+            <p>PRÆCISIONSSPRING</p>
+          </div>
+        </div>
+      </div>
+      <div class="tekst_galleri">
+        <p class="tekst">
+          Sportsudvalget (SU) varetager talent og eliteudviklingen herunder også
+          landshold, dialog med landstrænere mv. og aktivitetsudvalget (AU)
+          varetager udvikling og aktiviteter for bredden dvs. fra du har opnået
+          faldskærmscertifikat og frem imod fokus på en disciplin.
+          <br />Formålet med DFU's disciplinudvalg er, at der gerne skulle være
+          repræsentanter fra alle 5 discipliner i begge udvalg, som den vej
+          igennem varetager disciplinernes udvikling og interessen for
+          disciplinen. I kalenderen kan du finde alle aktiviteter for både
+          bredde og talent/eliten.
+        </p>
+        <div class="udvalg">
+          <!-- sportsudvalg -->
+          <a
+            class="udvalg2"
+            href="https://www.dfu.dk/discipliner/sportsudvalget"
+            >Sportsudvalg</a
+          >
+          <!-- aktivitetsudvalg -->
+          <a
+            class="udvalg2"
+            href="https://www.dfu.dk/discipliner/aktivitetsudvalget"
+            >Aktivitetsudvalg</a
+          >
+        </div>
+      </div>
+      <a class="tilbagetiltop" href="discipliner.html">
+        <img class="pil" src="img/pil.webp" alt="pil"
+      /></a>
+    </main>
+    <footer>
+      <section class="footer1">
+        <div class="input">
+          <h2>Følg med i DFU!</h2>
+          <form>
+            <div class="form-felt">
+              <label for="email">E-mail</label>
+              <input placeholder="email address*" name="email" type="email" />
+            </div>
+
+            <div class="form-felt">
+              <label for="name">Navn</label>
+              <input placeholder="navn*" name="fname" type="text" />
+            </div>
+
+            <button type="submit">Tilmeld</button>
+          </form>
+        </div>
+        <div class="genveje">
+          <h2>Genveje</h2>
+          <p>Kontakt DFU</p>
+          <p>Nyheder</p>
+          <p>DFU kalenderen</p>
+          <p>Links til "Springeren"</p>
+        </div>
+      </section>
+      <section class="footer2">
+        <div>
+          <p>© 2024 by Dansk Faldskærms Union</p>
+          <p>Idrættens Hus, Brøndby Stadion 20, DK-2605 Brøndby</p>
+          <p>Telefon: +45 23 44 20 19 Email: dfu@dfu.dk</p>
+        </div>
+        <div class="logo">
+          <img class="logo" src="img/dif.webp" alt="DIF logo" />
+          <img class="logo" src="img/fai.webp" alt="FAI logo" />
+          <img class="logo" src="img/dka.webp" alt="DKA logo" />
+        </div>
+        <div class="some">
+          <h2>Følg os på SoMe</h2>
+        </div>
+      </section>
+    </footer>
+    <script src="login.js"></script>
+  </body>
+</html>
