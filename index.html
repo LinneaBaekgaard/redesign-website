@@ -1,108 +1,102 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galleri & Video</title>
-    <link rel="stylesheet" href="/css/generel.css" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>forside</title>
+    <link rel="stylesheet" href="css/forside.css" />
   </head>
-
   <body>
     <header>
-      <nav>
-        <ul>
-          <li class="menu">
-            <a href="index.html">
-              <script class="lottiefile" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-              <dotlottie-player src="https://lottie.host/2f8993fa-efc9-494c-910a-5bc26093e492/0dUMkm7Oiz.lottie" background="transparent" speed="1" style="width: 100px; height: 100px"></dotlottie-player>
-            </a>
-          </li>
-          <li>
-            <input type="checkbox" id="burger-toggle" />
-            <label for="burger-toggle" class="burger-menu">&#9776;</label>
-            <nav>
-              <ul class="menu">
-                <li><a href="index.html"></a>Menu</li>
-              </ul>
-            </nav>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <!--  MENUEN  -->
+      <div class="header">
+        <!--  LOTTIEFILE  -->
+        <a href="index.html">
+          <script
+            class="lottiefile"
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+          <dotlottie-player
+            src="https://lottie.host/4d05b2e0-6d8d-4b51-866d-6875a558ec92/XKM8eC7pPu.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 150px"
+            loop="false"
+            autoplay
+          ></dotlottie-player>
+        </a>
 
-    <main>
-      <section class="grid_1-1">
-        <div class="billede_1">
-          <img src="imgs/billede_1.webp" alt="Billede 1" />
+        <!--  SØGE-BAR  -->
+        <div class="menu">
+          <div class="search">
+            <input type="text" placeholder="Søg" aria-label="Søg" />
+          </div>
+          <!--  BURGER-MENU  -->
+          <input type="checkbox" id="burger-toggle" />
+          <label for="burger-toggle" class="burger-menu">&#9776;</label>
+          <nav>
+            <ul class="dropdown">
+              <li><a href="index.html">Forside</a></li>
+              <li><a href="omdfu.html">Om DFU</a></li>
+              <li><a href="discipliner.html">Dicipliner</a></li>
+              <li><a href="test.html">Galleri</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <div class="billede_2">
-          <img src="imgs/billede_2.webp" alt="Billede 2" />
-        </div>
-
-        <div class="billede_3">
-          <img src="imgs/billede_3.webp" alt="Billede 3" />
-        </div>
-
-        <div class="billede_4">
-          <img src="imgs/billede_4.webp" alt="Billede 4" />
-        </div>
-
-        <div class="billede_5">
-          <img src="imgs/billede_5.webp" alt="Billede 5" />
-        </div>
-
-        <div class="billede_6">
-          <img src="imgs/billede_6.webp" alt="Billede 6" />
-        </div>
-
-        <div class="billede_7">
-          <img src="imgs/billede_7.webp" alt="Billede 7" />
-        </div>
-
-        <div class="billede_8">
-          <img src="imgs/billede_8.webp" alt="Billede 8" />
-        </div>
-
-        <div class="billede_9">
-          <img src="imgs/billede_9.webp" alt="Billede 9" />
-        </div>
-
-        <div class="billede_10">
-          <img src="imgs/billede_10.webp" alt="Billede 10" />
-        </div>
-      </section>
-
-      <br />
-
-      <h1>VIDEOER</h1>
-
-      <section class="video_grid">
-        <div class="video_1">
-          <video controls src="videos/video_1.mp4">Video 1</video>
-        </div>
-
-        <div class="video_2">
-          <video controls src="videos/video_2.mp4">Video 2</video>
-        </div>
-
-        <div class="video_3">
-          <video controls src="videos/video_3.mp4">Video 3</video>
-        </div>
-
-        <div class="video_4">
-          <video controls src="videos/video_4.mp4">Video 4</video>
-        </div>
-      </section>
-
-      <div class="video_5">
-        <video controls src="">Vores video</video>
       </div>
-    </main>
+    </header>
+    <main>
+      <div class="video_container">
+        <video autoplay loop muted width="100%" height="100%" controls>
+          <source
+            src="https://irgens-portfolio.dk/05_indhold/virksomhedssite/svaeve.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="video_text">
+          Faldskærm er også <br />
+          naturoplevelser på 1.klasse...
+        </div>
+      </div>
+      <section class="galleri">
+        <div class="image_text_overlay">
+          <a href="booknu.html"> <img src="img/booknu.webp" alt="Book nu" /></a>
+          <div class="text_overlay">
+            <p>BOOK NU</p>
+          </div>
+        </div>
 
+        <div class="image_text_overlay">
+          <a href="galleri.html">
+            <img src="img/galleri.webp" alt="Galleri"
+          /></a>
+          <div class="text_overlay">
+            <p>GALLERI</p>
+          </div>
+        </div>
+
+        <div class="image_text_overlay">
+          <a href="omdfu.html"> <img src="img/omdfu.webp" alt="om DFU" /></a>
+          <div class="text_overlay">
+            <p>OM DFU</p>
+          </div>
+        </div>
+
+        <div class="image_text_overlay">
+          <a href="discipliner.html">
+            <img src="img/discipliner.webp" alt="Discipliner"
+          /></a>
+          <div class="text_overlay">
+            <p>DISCIPLINER</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <section class="footer1">
-        <div class="form-felt">
+        <div class="input">
           <h2>Følg med i DFU!</h2>
           <form>
             <div class="form-felt">
@@ -118,26 +112,30 @@
             <button type="submit">Tilmeld</button>
           </form>
         </div>
-        <div class="footer-tekst">
-          <p>Genveje</p>
+        <div class="genveje">
+          <h2>Genveje</h2>
           <p>Kontakt DFU</p>
           <p>Nyheder</p>
-          <p>DFU Kalenderen</p>
-          <p>Links til “Springeren”</p>
+          <p>DFU kalenderen</p>
+          <p>Links til "Springeren"</p>
         </div>
       </section>
-
       <section class="footer2">
-        <p>© 2024 by Dansk Faldskærms Union Idrættens Hus, Brøndby Stadion 20, DK-2605 Brøndby Telefon: +45 23 44 20 19</p>
-
-        <div class="sponsorer">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <div>
+          <p>© 2024 by Dansk Faldskærms Union</p>
+          <p>Idrættens Hus, Brøndby Stadion 20, DK-2605 Brøndby</p>
+          <p>Telefon: +45 23 44 20 19 Email: dfu@dfu.dk</p>
         </div>
-
-        <p>Følg os på SoMe</p>
+        <div class="logo">
+          <img class="logo" src="img/dif.webp" alt="DIF logo" />
+          <img class="logo" src="img/fai.webp" alt="FAI logo" />
+          <img class="logo" src="img/dka.webp" alt="DKA logo" />
+        </div>
+        <div class="some">
+          <h2>Følg os på SoMe</h2>
+        </div>
       </section>
     </footer>
+    <script src="login.js"></script>
   </body>
 </html>
