@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="da">
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <title>Dansk Faldskærms Union</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="om.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="logo">
-        <img src="img/logo.webp" alt="dfu logo" />
-      </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#">Forside</a></li>
-          <li><a href="#">Discipliner</a></li>
-          <li><a href="#">Galleri</a></li>
-        </ul>
-        <div class="search">
-          <input type="text" placeholder="Søg" aria-label="Søg" />
+    <header>
+      <!--  MENUEN  -->
+      <div class="header">
+        <!--  LOTTIEFILE  -->
+        <a href="index.html">
+          <script
+            class="lottiefile"
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+          <dotlottie-player
+            src="https://lottie.host/4d05b2e0-6d8d-4b51-866d-6875a558ec92/XKM8eC7pPu.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 150px"
+            loop="false"
+            autoplay
+          ></dotlottie-player>
+        </a>
+
+        <!--  SØGE-BAR, BURGER & DROPDOWN  -->
+        <div>
+          <div class="search">
+            <input type="text" placeholder="Søg" aria-label="Søg" />
+          </div>
+
+          <input type="checkbox" id="burger-toggle" />
+          <label for="burger-toggle" class="burger-menu">&#9776;</label>
+
+          <nav>
+            <ul class="dropdown">
+              <li><a href="index.html">Forside</a></li>
+              <li><a href="omdfu.html">Om DFU</a></li>
+              <li><a href="dicipliner.html">Dicipliner</a></li>
+              <li><a href="test.html">Galleri</a></li>
+            </ul>
+          </nav>
         </div>
-        <button class="nav2" aria-label="vis menu"><span></span></button>
-      </nav>
+      </div>
     </header>
 
     <main>
@@ -97,33 +124,48 @@
       </section>
     </main>
     <footer>
-      <div class="form-felt">
-        <label>
-          E-mail
-          <input
-            placeholder="email Adresse*"
-            type="email"
-            name="email"
-            required
-          />
-          <div class="form-felt">
-            <label>
-              Fulde navn
-              <input placeholder="navn" type="text" name="fnavn" required />
-            </label>
-          </div>
-        </label>
-      </div>
-      <label class="option">
-        <input
-          type="checkbox"
-          name="gdpr_consent"
-          value="1"
-          class="form-checkbox required"
-        />
-        Jeg er indforstået med DFU's bestemmelser om brug af data.
-        <span class="form-required" title="This field is required.">*</span>
-      </label>
+      <section class="footer1">
+        <div class="input">
+          <h2>Følg med i DFU!</h2>
+          <form>
+            <div class="form-felt">
+              <label for="email">E-mail</label>
+              <input placeholder="email address*" name="email" type="email" />
+            </div>
+
+            <div class="form-felt">
+              <label for="name">Navn</label>
+              <input placeholder="navn*" name="fname" type="text" />
+            </div>
+
+            <button type="submit">Tilmeld</button>
+          </form>
+        </div>
+        <div class="genveje">
+          <h2>Genveje</h2>
+          <p>Kontakt DFU</p>
+          <p>Nyheder</p>
+          <p>DFU kalenderen</p>
+          <p>Links til "Springeren"</p>
+        </div>
+      </section>
+      <section class="footer2">
+        <div>
+          <p>© 2024 by Dansk Faldskærms Union</p>
+          <p>Idrættens Hus, Brøndby Stadion 20, DK-2605 Brøndby</p>
+          <p>Telefon: +45 23 44 20 19 Email: dfu@dfu.dk</p>
+        </div>
+        <div class="logo">
+          <img class="logo" src="img/dif.webp" alt="DIF logo" />
+          <img class="logo" src="img/fai.webp" alt="FAI logo" />
+          <img class="logo" src="img/dka.webp" alt="DKA logo" />
+        </div>
+        <div class="some">
+          <h2>Følg os på SoMe</h2>
+        </div>
+      </section>
     </footer>
+
+    <script src="login.js"></script>
   </body>
 </html>

@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Noto Sans Display', ; /* Ændret til Noto Sans Display */
+  font-family: 'Noto Sans Display', ;
   background: #f5f5f5;
   color: #333;
   line-height: 1.7;
 }
-/* Header med logo, søgefelt og burger-menu */
+/* Generel styling for headeren */
 .header {
   display: flex;
   align-items: center;
@@ -17,22 +16,21 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-
-.logo img {
-  height: 60px;
-  display: block;
-}
-
-/* Navigation i toppen (søgning + burger-menu) */
-.nav {
+.header a {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 1.5rem; 
-  flex: 1;
-
+  text-decoration: none;
 }
 
+/* Containeren der indeholder søgning, burger-menu og nav */
+.header > div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+
+/* Søgning */
 .search input {
   border: 1px solid #ccc;
   padding: 0.5rem 1rem;
@@ -40,74 +38,59 @@ body {
   font-size: 1rem;
 }
 
-/* Burger-menu med 3 streger */
-.nav2 {
-  position: relative;
-  width: 24px;
-  height: 20px;
-  background: none;
-  border: none;
+/* Skjuler checkbox til burger-menuen */
+#burger-toggle {
+  display: none;
+}
+
+/* Burger-menu ikon */
+.burger-menu {
+  font-size: 1.5rem;
   cursor: pointer;
-  padding: 0;
+  user-select: none;
 }
 
-.nav2::before,
-.nav2::after,
-.nav2 span {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #333;
-  border-radius: 1px;
-}
-
-.nav2::before {
-  top: 4px;
-}
-
-.nav2 span {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.nav2::after {
-  bottom: 4px;
-}
-
-/* Hovednavigation under headeren */
-.main-nav {
-  background: #fff;
-  border-bottom: 1px solid #ccc;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.nav-list {
+/* Dropdown-listen er som udgangspunkt skjult */
+.dropdown {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  position: absolute;
+  top: 100%;
+  right: 0; 
+  background: #fff;
+  border: 1px solid #ccc;
+  display: none; /* skjult som standard */
 }
 
-.nav-list li {
-  display: inline-block;
-  margin: 0 1rem;
+/* Når burger er 'checked' vises dropdown */
+#burger-toggle:checked + .burger-menu + nav .dropdown {
+  display: block;
 }
 
+/* Links i dropdown */
+.dropdown li {
+  margin: 0;
+}
 
-.nav-list li a {
+.dropdown li a {
+  display: block;
   text-decoration: none;
   color: #333;
-  background: #fff;
   padding: 0.6rem 1.2rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1.1rem; 
-  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  white-space: nowrap;
 }
+
+.dropdown li a:hover {
+  background: #f0f0f0;
+}
+
+/* Fjern sidste borders på sidste element i dropdown */
+.dropdown li:last-child a {
+  border-bottom: none;
+}
+
 
 /* Orange bjælke med "Om DFU" */
 .intro-section > h1 {
@@ -139,7 +122,7 @@ body {
   margin-top: 2rem;
 }
 
-/* Indholdsbokse med let skygge for et professionelt look */
+/* Indholdsbokse med skygge */
 .intro-text, 
 .intro-image,
 .history-section p, 
@@ -221,6 +204,58 @@ p {
   font-size: 1.3rem;
 }
 
+
+
+/* FOOTER */
+.logo {
+  width: auto;
+}
+
+.footer1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #eeeeee;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  gap: 1em;
+}
+
+label,
+input,
+button {
+  display: block;
+}
+
+button {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-felt {
+  margin-bottom: 1em;
+}
+
+.footer2 {
+  display: grid;
+  background-color: var(--baggrund);
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f26722;
+}
+
+.logo {
+  padding: 5px;
+}
+
+
 /* Responsive tilpasning */
 @media (max-width: 768px) {
 
@@ -252,6 +287,43 @@ p {
   p {
     font-size: 1.2rem;
   }
+  footer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .logo {
+    align-content: center;
+    text-align: center;
+  }
+
+  .some {
+    text-align: right;
+    align-content: center;
+    padding-right: 20px;
+  }
+
+  .input {
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .genveje {
+    position: relative;
+    padding-left: 30%;
+  }
+
+  .genveje p {
+    padding: 0;
+    color: #17305f;
+  }
+
+  p {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.3rem;
+  }
+
+
 }
 
 
