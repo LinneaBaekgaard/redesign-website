@@ -1,0 +1,459 @@
+html {
+    --overskrift: ;
+    --underovershift: sans-serif;
+    --broedtekst: helvetica;
+    --baggrund: #ff7e39;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+main {
+    margin-bottom: 60px;
+}
+
+
+/***** BURGER-MENU ************************************/
+
+.dropdown {
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+}
+
+.burger-menu {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-top: 92px;
+}
+
+#burger-toggle:checked + label + nav ul {
+    display: block;
+}
+
+#burger-toggle {
+    display: none;
+}
+
+nav ul {
+    background: #fbf7f2;
+    position: fixed;
+    right: 5px;
+    top: 160px;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 10px;
+    margin: 0;
+    width: 100%;
+    max-width: 350px;
+    height: 200%;
+}
+
+nav ul li {
+    width: 100%;
+}
+  
+nav a {
+    line-height: 2em;
+    width: 100%;
+    display: inline-block;
+    background-color: #fbf7f2;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    text-align: right;
+    height: 100%;
+}
+
+
+/***** SEARCH BAR **************************************/
+.search {
+    position: absolute;
+    right: 60px;
+    top: 112px;
+
+}
+
+.search input {
+
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: auto;
+  }
+
+
+/***** OVERSKRIFTS-BJÆLKE ********************************/
+h1 {
+    background-color: #FF7E39;
+    padding: 15px;
+    color: #fff;
+}
+
+/***** RØD KNAP - Tilbage til op ***************************/
+.tilbagetiltop {
+    position: absolute;
+    display: inline-block;
+    width: 70px;
+    padding: 0;
+    z-index: 5;
+    right: -96%;
+  }
+
+/* BILLEDER *************************************************/
+
+img {
+    max-width: 100%;
+}
+
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 7;
+    gap: 40px;
+    margin-bottom: 50px;
+   
+}
+
+.grid_1-1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    margin-top: 40px;
+
+}
+
+.billede_1 {
+    grid-column: span 2;
+    grid-row: 1;
+    border-radius: 20px;
+}
+
+.billede_2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.billede_3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.billede_4 {
+    grid-column: span 2;
+    grid-row: 3;
+    border-radius: 20px;
+}
+
+.billede_5 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.billede_6 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.billede_7 {
+    grid-column: span 2;
+    grid-row: 5;
+}
+
+.billede_8 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.billede_9 {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.billede_10 {
+    grid-column: span 2;
+    grid-row: 7;
+}
+
+/******* TEKST PÅ BILLEDER ************************************/
+.image_overlay {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    
+}
+.image_overlay img{
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.text_overlay {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1.5vw;
+    color: #fff;
+    background-color: #FF7E39;
+    padding: 0 90px 0 90px;
+    margin-top: 30em;
+    border-radius: 12px;
+}
+
+/*  VIDEOER      ***********************************/
+
+.video_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    gap: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.video_1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+.video_2 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+.video_3 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+}
+
+.video_4 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+}
+
+.video_5 {
+    display: grid;
+    grid-column: span 2;
+    grid-row: 3;
+    width: 100%;
+    height: auto;
+}
+
+/* Videos generelt *********************************/
+video {
+    width: 100%;
+    border-radius: 12px;
+    /* margin: 0 40px 0 40px; */
+    gap: 2em;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Footer **********************************************/
+
+.footer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #eeeeee;
+    justify-content: space-between;
+  }
+
+  .footer-tekst {
+    display: grid;
+    grid-column: 2;
+  }
+
+  .footer2 {
+    background-color: #ff9861;
+    color: #fff;
+  }
+
+  .footer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #eeeeee;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 1em;
+  }
+  
+  label,
+  input,
+  button {
+    display: block;
+  }
+  
+  button {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .form-felt {
+    margin-bottom: 1em;
+  }
+  
+  .footer2 {
+    display: grid;
+    background-color: #FF7E39;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .logo {
+    padding: 5px;
+  }
+
+  /* Media query ******************************************/
+
+@media (width >= 768px) {
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 5;
+        gap: 40px;
+        margin: 0 60px 60px 60px; 
+    }
+    .billede_1 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .billede_2 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .billede_3 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .billede_4 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .billede_5 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .billede_6 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .billede_7 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .billede_8 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .billede_9 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .billede_10 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    /* VIDEOER **********************************************/
+    .Videoer_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 2;
+        gap: 20px;
+    }
+    .video_1 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .video_2 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .video_3 {
+        display: grid;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .video_4 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .video_5 {
+        display: grid;
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+
+    /* FOOTER **********************************************/
+
+    .footer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .logo {
+        align-content: center;
+        text-align: center;
+      }
+    
+      .some {
+        text-align: right;
+        align-content: center;
+      }
+      .input {
+        position: relative;
+        padding-left: 50%;
+      }
+    
+      .genveje {
+        position: relative;
+        padding-left: 30%;
+      }
+
+    
+
+
+}
